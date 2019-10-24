@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-22T07:44:18.000Z</updated>
+  <updated>2019-10-24T03:28:22.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,21 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>计算广告生态体系</title>
-    <link href="http://yoursite.com/2019/10/22/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A/"/>
-    <id>http://yoursite.com/2019/10/22/计算广告/</id>
-    <published>2019-10-22T07:44:18.000Z</published>
-    <updated>2019-10-22T07:44:18.000Z</updated>
+    <title>计算广告生态中的各种角色梳理</title>
+    <link href="http://yoursite.com/2019/10/24/programmatic-ad-roles/"/>
+    <id>http://yoursite.com/2019/10/24/programmatic-ad-roles/</id>
+    <published>2019-10-24T02:59:47.000Z</published>
+    <updated>2019-10-24T03:28:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>先来一张不太完整的图展现下各种角色之间的交互关系<br><img src="/2019/10/24/programmatic-ad-roles/overview.png"></p><h4 id="角色介绍"><a href="#角色介绍" class="headerlink" title="角色介绍"></a>角色介绍</h4><p><strong>Advertiser</strong>：广告的需求方，就是广告主或者广告代理。</p><p><strong>Publisher</strong>：广告的供给方，指提供广告位的媒体。</p><p><strong>ADN</strong>： Ad Network，从各个媒体采买流量，然后转卖给Advertiser。主要服务于一些体量比较小的媒体，或者一个大媒体的边角流量。<br>ADN的好处是可以替媒体和广告主牵线，帮助媒体流量变现。然后ADN的局限也很明显，一方面ADN的定价过程是个黑盒，媒体很难实现流量价值的最大化；<br>另一方面，广告主的获得的流量也很难保证质量，缺乏流量选择的自主性。</p><p><strong>ADX</strong>： Ad Exchanger，由于ADN的限制，逐渐发展出一种叫RTB（RealTime Bidding）的模式，对于媒体的每一次曝光机会，<br>多个广告主可以根据自己定向的需求实时发起竞价，价高者或者展示机会。这样媒体可以获得更高的利益，广告主也可以更自由地选择。</p><p><strong>DSP</strong>：Demand Side Platform。ADX的出现使得广告投放的逻辑变得非常复杂，并不是每个广告主都有足够的数据能力来做判断流量是否适合自己，<br>而越来越多的ADX使得这个复杂程度进一步加强。在这样的背景下DSP应运而生，它的出现就是为了Demand Side，也就是广告主服务的，<br>广告主只要将自己的预算、定向条件等高速DSP，然后由DSP来和各种ADX打交道，将广告主的钱最优化地投入到最合适的流量上。<br>通常广告主和DSP是按CPM签的合同，但是DSP和ADX又是按CPC计费，那么如果DSP的算法足够优秀，那么就可以为自己赚到更多的差价。<br>但是想要赚到这个钱是个技术活，DSP需要对有足够的数据能力来分析流量和用户数据，预估广告位价值，然后按照预估价值排序来决定投放。<br>所以无论是算法还是数据层面都需要很高的技术积累。</p><p><strong>SSP</strong>: Supply Side Platform。顾名思义就是为需求方服务的，用于和各种ADX打交道。但是真正单独做SSP的很少，<br>很多ADX都会在自己这里简化同媒体的交互流程，从而方便和媒体的对接。</p><p><strong>DMP</strong>：Data Management Platform。DMP和上面的角色不太一样，它不直接参与广告的流程，但是又是越来越复杂的广告系统中不可或缺的。<br>它通过自己强大的数据能力，为DSP提供数据支持。</p><h4 id="市场上公司和角色的对应关系"><a href="#市场上公司和角色的对应关系" class="headerlink" title="市场上公司和角色的对应关系"></a>市场上公司和角色的对应关系</h4><p>放一张rtbchina上的2019年的中国程序化广告生态图<br><img src="/2019/10/24/programmatic-ad-roles/China-Programmatic-Ad-Tech.jpg"></p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;先来一张不太完整的图展现下各种角色之间的交互关系&lt;br&gt;&lt;img src=&quot;/2019/10/24/programmatic-ad-roles/overview.png&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;角色介绍&quot;&gt;&lt;a href=&quot;#角色介绍&quot; class=&quot;headerlin
+      
     
     </summary>
     
@@ -37,8 +45,8 @@
     <title>趴的知识网络</title>
     <link href="http://yoursite.com/2019/09/21/catalog/"/>
     <id>http://yoursite.com/2019/09/21/catalog/</id>
-    <published>2019-09-21T17:07:13.000Z</published>
-    <updated>2019-10-22T07:25:51.000Z</updated>
+    <published>2019-09-21T09:07:13.000Z</published>
+    <updated>2019-10-22T07:49:31.000Z</updated>
     
     <content type="html"><![CDATA[<p>工作一段时间了，做过很多项目，也接触了各种各样的技术栈，测试、前端、后端、大数据。现在的我可以参照文档和需求很快地搭建出一些原型，也可以在已有系统基础上加feature找bug，但我总觉得自己的知识太过零散，没有构成一个比较系统的知识体系。于是我决定把在日常工作遇到的一些问题和知识整理在这里，帮自己梳理清楚知识的来龙去脉，找到各种纷繁复杂的技术的核心概念和关系，为自己也为别人提供点帮助。这会是一个浩大的工程，但我相信，不积跬步无以至千里，我希望能靠一点一滴的积累逐渐丰富和完善这个博客。</p><h3 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h3><ul><li>Java</li><li>Scala</li><li>Python</li></ul><h3 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h3><ul><li>数据收集</li><li>数据存储</li><li>数据查询</li><li>数据展示</li></ul><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><h3 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h3>]]></content>
     
