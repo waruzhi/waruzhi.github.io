@@ -58,7 +58,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/06/06/git-branch-model/git_flow.png">
 <meta property="og:image" content="http://yoursite.com/2020/06/06/git-branch-model/gitlab_flow_environment_branches.png">
 <meta property="og:image" content="http://yoursite.com/2020/06/06/git-branch-model/gitlab_flow_release_branches.png">
-<meta property="og:updated_time" content="2020-06-07T16:21:25.551Z">
+<meta property="og:updated_time" content="2020-06-07T16:24:33.885Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git branch model总结">
 <meta name="twitter:description" content="刚到新公司的时候，发现大家的git分支和部署环境有点混乱，大家没有一个统一的标准，经常会因此分支混乱导致一些不必要的错误。因为之前工作中也用过各种各样的分支管理模型，但是一直没有好好梳理一下，所以就趁机稍微研究了一下，把调研的总结记录一下，并且最后写一下我们最终选择的方案是什么。 常见的git分支策略GitHub FlowGitHub Flow是最简单粗暴的flow。它只有一个核心的master分">
@@ -206,7 +206,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-08 00:21:25" itemprop="dateModified" datetime="2020-06-08T00:21:25+08:00">2020-06-08</time>
+                <time title="修改时间：2020-06-08 00:24:33" itemprop="dateModified" datetime="2020-06-08T00:24:33+08:00">2020-06-08</time>
               </span>
 
           
@@ -246,8 +246,7 @@
 <li>environment分支。我们的环境除了staging和production以外，可能还会有pp、qa、load、simulation。为了应该各种环境，我们计划参照Gitlab Flow，每个环境分支对应那个环境实际部署的版本。但是在实际操作过程中，过多的分支会给开发人员带来很大的负担，最好能配合好用的git相关工具。所以我们暂时没有使用这些分支，而是还是主要使用master和feature分支。</li>
 </ul>
 <p>目前来看，这个分支策略还有一些欠缺，比如hotfix和pre-release每次merge都得merge进release和master两个分支，一不小心就容易忘记。还有环境分支的使用上现在还没有找到合适的工具。之后随着我们的策略的更新，再来进一步更新吧。</p>
-<p>参考资料：</p>
-<ol>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ol>
 <li><a href="https://guides.github.com/introduction/flow/" target="_blank" rel="noopener">https://guides.github.com/introduction/flow/</a></li>
 <li><a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="noopener">https://nvie.com/posts/a-successful-git-branching-model/</a></li>
 <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target="_blank" rel="noopener">https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow</a></li>
@@ -337,7 +336,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#常见的git分支策略"><span class="nav-number">1.</span> <span class="nav-text">常见的git分支策略</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub-Flow"><span class="nav-number">1.0.1.</span> <span class="nav-text">GitHub Flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-Flow"><span class="nav-number">1.0.2.</span> <span class="nav-text">Git Flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitLab-Flow"><span class="nav-number">1.0.3.</span> <span class="nav-text">GitLab Flow</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我们项目的选择"><span class="nav-number">2.</span> <span class="nav-text">我们项目的选择</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#常见的git分支策略"><span class="nav-number">1.</span> <span class="nav-text">常见的git分支策略</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub-Flow"><span class="nav-number">1.0.1.</span> <span class="nav-text">GitHub Flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-Flow"><span class="nav-number">1.0.2.</span> <span class="nav-text">Git Flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitLab-Flow"><span class="nav-number">1.0.3.</span> <span class="nav-text">GitLab Flow</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我们项目的选择"><span class="nav-number">2.</span> <span class="nav-text">我们项目的选择</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">3.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
