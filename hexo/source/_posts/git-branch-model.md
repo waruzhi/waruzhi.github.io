@@ -33,3 +33,9 @@ GitLab Flow强调的是不那么复杂，但是又可以支持多种环境和记
 * environment分支。我们的环境除了staging和production以外，可能还会有pp、qa、load、simulation。为了应该各种环境，我们计划参照Gitlab Flow，每个环境分支对应那个环境实际部署的版本。但是在实际操作过程中，过多的分支会给开发人员带来很大的负担，最好能配合好用的git相关工具。所以我们暂时没有使用这些分支，而是还是主要使用master和feature分支。
 
 目前来看，这个分支策略还有一些欠缺，比如hotfix和pre-release每次merge都得merge进release和master两个分支，一不小心就容易忘记。还有环境分支的使用上现在还没有找到合适的工具。之后随着我们的策略的更新，再来进一步更新吧。
+
+参考资料：
+1. https://guides.github.com/introduction/flow/
+2. https://nvie.com/posts/a-successful-git-branching-model/
+3. https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+4. https://docs.gitlab.com/ee/topics/gitlab_flow.html#production-branch-with-gitlab-flow
