@@ -34,7 +34,7 @@ GitLab Flow强调的是不那么复杂，但是又可以支持多种环境和记
 
 目前来看，这个分支策略还有一些欠缺，比如hotfix和pre-release每次merge都得merge进release和master两个分支，一不小心就容易忘记。还有环境分支的使用上现在还没有找到合适的工具。之后随着我们的策略的更新，再来进一步更新吧。
 
-参考资料：
+# 参考资料
 1. https://guides.github.com/introduction/flow/
 2. https://nvie.com/posts/a-successful-git-branching-model/
 3. https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
